@@ -25,7 +25,6 @@ document.addEventListener('scroll', () => {
 //하단 화살표 홈영역 이후 표시하기
 const homeHalfHeight = home.offsetHeight / 2;
 const arrowUp = document.querySelector('.arrow-up');
-console.log(arrowUp);
 
 document.addEventListener('scroll', () => {
     if (window.scrollY > homeHalfHeight) {
@@ -34,4 +33,17 @@ document.addEventListener('scroll', () => {
     else {
         arrowUp.style.opacity = 0;
     }
+});
+
+
+const headerToggle = document.querySelector('.header__toggle');
+const headerMenu = document.querySelector('.header__menu');
+// 토클버튼 클릭시 메뉴 보여주기
+headerToggle.addEventListener('click', () => {
+    headerMenu.classList.toggle('open');
+});
+
+// 메뉴 아이템 클릭시 메뉴 닫기
+headerMenu.addEventListener('click', () => {
+    headerMenu.classList.remove('open');
 });
