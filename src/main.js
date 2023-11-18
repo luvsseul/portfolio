@@ -21,3 +21,17 @@ const homeHeight = home.offsetHeight;
 document.addEventListener('scroll', () => {
     home.style.opacity = 1 - window.scrollY / homeHeight;
 });
+
+//하단 화살표 홈영역 이후 표시하기
+const homeHalfHeight = home.offsetHeight / 2;
+const arrowUp = document.querySelector('.arrow-up');
+console.log(arrowUp);
+
+document.addEventListener('scroll', () => {
+    if (window.scrollY > homeHalfHeight) {
+        arrowUp.style.opacity = 1;
+    }
+    else {
+        arrowUp.style.opacity = 0;
+    }
+});
