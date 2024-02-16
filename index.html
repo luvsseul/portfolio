@@ -8,15 +8,15 @@
 
     <!-- SEO -->
     <title>한슬기의 포트폴리오</title>
-    <meta name="description" content="멋진 개발자가 되기 위한 슬기의 포트폴리오">
+    <meta name="description" content="안녕하세요 신입 개발자 한슬기입니다.">
     <meta name="author" content="한슬기">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 
     <!-- OG (Open Graph Data) -->
     <meta property="op:title" content="한슬기의 포트폴리오">
     <meta property="op:type" content="website">
-    <meta property="op:url" content="배포후 생성된 url">
-    <meta property="op:image" content="배포후에 생성된 이미지 url">
+    <meta property="op:url" content="https://luvsseul.github.io/portfolio/">
+    <meta property="op:image" content="https://luvsseul.github.io/portfolio/images/og.webp">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,12 +27,17 @@
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b854807eeb.js" crossorigin="anonymous"></script>
+
+    <!-- TypeIt -->
+    <script src="https://unpkg.com/typeit@8.7.1/dist/index.umd.js"></script>
+
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
     <!-- Javascript -->
     <script type="module" src="src/main.js" defer></script>
     <script type="module" src="src/projects.js" defer></script>
     <script type="module" src="src/active_menu.js" defer></script>
+    <script type="module" src="src/type.js" defer></script>
 </head>
 
 
@@ -63,8 +68,8 @@
         <section id="home">
             <div class="home__container">
                 <img class="home__avatar" src="images/Profile.png" alt="profile">
-                <h2 class="home__title">Hello <br />I&#39;m <strong class="home__title--strong">Dream Coder</strong>,
-                    Seulgi
+                <h2 class="home__title" aria-label="Hello, I'm dream coder seulgi">안녕하세요 <br />저는 <strong
+                        class="home__title--strong">생각하는</strong> 개발자 한슬기입니다
                 </h2>
                 <p class="home__description">A Software engineer currently residing in Ansan, Korea</p>
                 <a class="home__contact" href="#contact">Contact Me</a>
@@ -73,39 +78,32 @@
         <!-- About -->
         <section id="about" class="section max-container">
             <h2 class="title">About me</h2>
-            <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias nemo fugit, quo
-                vel harum ratione rem
-                velit, quisquam ab asperiores tempora id qui dolorum, labore in porro obcaecati ut autem!</p>
+            <p class="description">언어를 배우고 응용하고 불편한점을 개선하는 경험이
+                저에게 끊임없는 동기부여가 됩니다.<br />
+                프론트엔드로 시작했지만 풀스택 개발자를 목표로 쉬지않고 공부하려 합니다.</p>
             <ul class="majors">
                 <li class="major">
                     <i class="fa-brands fa-html5 major__icon"></i>
                     <p class="major__title">Front-end</p>
-                    <p>HTML, CSS, JavaScript, TypeScript, React, Vue, Web APIs</p>
-                </li>
-                <li class="major">
-                    <i class="fa-solid fa-mobile major__icon"></i>
-                    <p class="major__title">Mobile</p>
-                    <p>Android, iOS, React Navtive, Flutter, Java, Swift, Kotlin</p>
+                    <p>HTML, CSS, JavaScript, TypeScript, React, Web APIs</p>
                 </li>
                 <li class="major">
                     <i class="fa-solid fa-server major__icon"></i>
                     <p class="major__title">Back-end</p>
-                    <p>Java, JavaScript, Go, NodeJs, Rest APIs, GraphQL</p>
+                    <p>JavaScript</p>
+                </li>
+                <li class="major">
+                    <i class="fa-solid fa-code-compare major__icon"></i>
+                    <p class="major__title">Full-stack</p>
+                    <p>HTML, CSS, JavaScript, TypeScript, React, Web APIs</p>
                 </li>
             </ul>
             <ul class="jobs">
                 <li class="job">
-                    <img src="images/jobs/google.png" alt="google logo">
+                    <img src="images/jobs/coverm.png" alt="coverm logo">
                     <div>
-                        <p class="job__name">Google as Senior Software Engineer</p>
-                        <p class="job__period">2019 Oct - Until now</p>
-                    </div>
-                </li>
-                <li class="job">
-                    <img src="images/jobs/samsung.png" alt="samsung logo">
-                    <div>
-                        <p class="job__name">Samsung as Software Engineer</p>
-                        <p class="job__period">2017 Oct - Until now</p>
+                        <p class="job__name">Cover.M as Brand Manager</p>
+                        <p class="job__period">2014 Oct - 2023 May</p>
                     </div>
                 </li>
             </ul>
@@ -114,10 +112,11 @@
         <section id="skills" class="section">
             <div class="max-container">
                 <h2 class="title">My Skills</h2>
-                <p class="description">Skills $ Attributes</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi adipisci eum dignissimos, fugit ea
-                    et
-                    magnam! Explicabo ipsum iusto dolorum ratione quis iste maxime at ea nemo? Facilis, autem illum.</p>
+                <p class="description">Skills & Attributes</p>
+                <p>JavaScript, React, TypeScript 까지의 언어들을 이용해 개발하고, Git과 같은 협업툴을 사용 가능합니다.<br />
+                    tailwind, PostCSS, Styled Components를 다룰줄 알고,<br />
+                    이 외에도, 포토샵, 일러스트, 프리미어 등의 사진, 영상 편집 툴을 자유자재로 사용가능합니다.
+                </p>
                 <div class="skills">
                     <section class="skills__coding">
                         <h3 class="skills__title">Coding Skills</h3>
@@ -285,7 +284,6 @@
             </ul>
         </section>
         <!-- Contact -->
-        <!-- <section id="contact"></section> -->
         <!-- Arrow Up -->
         <aside>
             <a class="arrow-up" href="#" title="back to top">
@@ -300,7 +298,7 @@
             <p class="description">luvsseul@gmail.com</p>
             <ul class="contact__links">
                 <li>
-                    <a class="contact__link" href="https://홈페이지주소" title="my github link" target="_blank">
+                    <a class="contact__link" href="https://github.com/luvsseul" title="my github link" target="_blank">
                         <i class="fa-brands fa-github"></i>
                     </a>
                 </li>
