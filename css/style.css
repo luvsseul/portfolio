@@ -199,7 +199,6 @@ button:focus {
 }
 .home__reside--strong {
 	font-size: 2rem;
-	color: var(--color-text);
 }
 .home__contact {
 	display: inline-block;
