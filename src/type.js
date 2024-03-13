@@ -4,8 +4,8 @@ new TypeIt('.home__title--strong', {
     loop: true,
     speed: 100,
 })
-    .move(-4)
-    .type('끊임없이 ')
+    .move(-6)
+    .type('웹퍼블리셔& ')
     .move(null, { to: 'END' })
     .pause(1000)
     .delete()
