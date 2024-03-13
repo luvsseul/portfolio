@@ -284,19 +284,19 @@ button:focus {
 }
 .skills__title {
 	color: var(--color-accent);
-	margin: 1rem 0;
+	margin: 0 0 1rem;
 	font-size: 1.2rem;
 }
 .skills__coding {
 	grid-row: span 2;
-	padding: 1rem;
+	padding: 1rem 0 1rem;
 	background-color: var(--color-primary);
 }
 .skills__tools {
-	padding: 1rem;
+	padding: 2rem 1rem;
 }
 .skills__etc {
-	padding: 1rem;
+	padding: 2rem 1rem;
 	background-color: var(--color-primary);
 	filter: brightness(150%);
 }
@@ -532,7 +532,12 @@ button:focus {
 		display: block;
 	}
 	#home {
+		height: 1100px;
 		padding-bottom: 3rem;
+	}
+	.home__avatar {
+		max-width: 90%;
+		height: auto;
 	}
 	.home__title {
 		font-size: 2.5rem;
@@ -544,7 +549,7 @@ button:focus {
 		align-items: center;
 	}
 	.major {
-		max-width: 25rem;
+		width: 97%;
 	}
 	.job {
 		justify-content: center;
