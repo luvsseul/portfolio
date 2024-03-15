@@ -2,9 +2,9 @@
 :root {
 	/* App Colors */
 	--color-primary: var(--color-black);
-	--color-primary-variant: var(--color-gray);
-	--color-accent: var(--color-orange);
-	--color-accent-variant: var(--color-lime);
+	--color-primary-variant: var(--color-skyBlue);
+	--color-accent: var(--color-deepBlue);
+	--color-accent-variant: var(--color-lightBlue);
 	--color-text: var(--color-white);
 
 	/* Background */
@@ -13,7 +13,7 @@
 		rgba(8, 26, 60, 1) 0%,
 		rgba(5, 10, 19, 1) 100%
 	);
-	--home-bg-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700'%3E%3Cdefs%3E%3ClinearGradient gradientTransform='rotate(150, 0.5, 0.5)' x1='50%25' y1='0%25' x2='50%25' y2='100%25' id='ffflux-gradient'%3E%3Cstop stop-color='hsl(37, 91%25, 55%25)' stop-opacity='1' offset='0%25'%3E%3C/stop%3E%3Cstop stop-color='hsl(304, 69%25, 63%25)' stop-opacity='1' offset='100%25'%3E%3C/stop%3E%3C/linearGradient%3E%3Cfilter id='ffflux-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.005 0.003' numOctaves='2' seed='136' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeGaussianBlur stdDeviation='20 0' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' edgeMode='duplicate' result='blur'%3E%3C/feGaussianBlur%3E%3CfeBlend mode='color-dodge' x='0%25' y='0%25' width='100%25' height='100%25' in='SourceGraphic' in2='blur' result='blend'%3E%3C/feBlend%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='url(%23ffflux-gradient)' filter='url(%23ffflux-filter)'%3E%3C/rect%3E%3C/svg%3E");
+	--home-bg-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 700 700' width='700' height='700'%3E%3Cdefs%3E%3ClinearGradient gradientTransform='rotate(150, 0.5, 0.5)' x1='50%25' y1='0%25' x2='50%25' y2='100%25' id='ffflux-gradient'%3E%3Cstop stop-color='hsl(49, 26%, 87%)' stop-opacity='1' offset='0%25'%3E%3C/stop%3E%3Cstop stop-color='hsl(212, 72%, 59%)' stop-opacity='1' offset='100%25'%3E%3C/stop%3E%3C/linearGradient%3E%3Cfilter id='ffflux-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.005 0.003' numOctaves='2' seed='136' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeGaussianBlur stdDeviation='20 0' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' edgeMode='duplicate' result='blur'%3E%3C/feGaussianBlur%3E%3CfeBlend mode='color-dodge' x='0%25' y='0%25' width='100%25' height='100%25' in='SourceGraphic' in2='blur' result='blend'%3E%3C/feBlend%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='url(%23ffflux-gradient)' filter='url(%23ffflux-filter)'%3E%3C/rect%3E%3C/svg%3E");
 
 	/* Colors */
 	--color-white: #ffffff;
@@ -23,6 +23,9 @@
 	--color-gray: #1b1e26;
 	--color-lime: #d6ff3f;
 	--color-pink: #f368e6;
+	--color-deepBlue: #8294c4;
+	--color-skyBlue: #c5dcec;
+	--color-lightBlue: #dbdfea;
 	/* Size */
 	--size-max-width: 1200px;
 
@@ -226,7 +229,7 @@ button:focus {
 	flex: 1;
 	background-color: var(--color-primary-variant);
 	padding: 2rem 1rem;
-	color: var(--color-text);
+	color: var(--color-black);
 	border-radius: 1rem;
 	cursor: default;
 	box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.38);
@@ -249,7 +252,7 @@ button:focus {
 #skills {
 	position: relative;
 	background-color: var(--color-primary-variant);
-	color: var(--color-text);
+	color: var(--color-black);
 }
 
 #skills::after {
@@ -291,14 +294,19 @@ button:focus {
 	grid-row: span 2;
 	padding: 1rem 0 1rem;
 	background-color: var(--color-primary);
+	color: var(--color-text);
 }
 .skills__tools {
 	padding: 2rem 1rem;
+	background-color: var(--color-primary);
+	filter: brightness(200%);
+	color: var(--color-text);
 }
 .skills__etc {
 	padding: 2rem 1rem;
 	background-color: var(--color-primary);
 	filter: brightness(150%);
+	color: var(--color-text);
 }
 
 .bar {

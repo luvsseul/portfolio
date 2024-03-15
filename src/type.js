@@ -9,7 +9,7 @@ new TypeIt('.home__title--strong', {
     .move(null, { to: 'END' })
     .pause(1000)
     .delete()
-    .type('프론트엔드')
+    .type('프론트엔드 개발자')
     .pause(1000)
     .delete()
     .go();
