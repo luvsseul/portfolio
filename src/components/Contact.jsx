@@ -20,7 +20,7 @@ const Contact = () => {
                         <p>email: luvsseul@gmail.com</p>
                     </div>
                     <div className="footer-logo">
-                        <img src="imgs/logo.png" alt="tfit" className="logo-text footer-logo-img" />
+
                         <p className="tagline">THE INCLUSIVE BEAUTY</p>
                     </div>
                 </motion.div>

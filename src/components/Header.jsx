@@ -31,7 +31,6 @@ const Header = () => {
         >
             <div className="container">
                 <a href="#home" className="logo" onClick={closeMenu}>
-                    <img src="imgs/logo.png" alt="tfit" className="logo-img" />
                 </a>
 
                 <div className={`menu-toggle ${mobileMenuOpen ? 'open' : ''}`} onClick={toggleMenu}>
