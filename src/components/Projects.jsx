@@ -38,28 +38,28 @@ const designProjects = [
         title: '영상제작',
         description: 'Premiere Pro, After Effects, Photoshop',
         details: '프리미어프로, 애프터이펙트, 포토샵을 활용한 영상 제작 프로젝트입니다.',
-        link: 'portfolio.pdf',
+        link: 'portfolio_2.pdf',
         image: 'imgs/projects/project1.png'
     },
     {
         title: '상세페이지 제작',
         description: 'Photoshop, Illustrator',
         details: '포토샵과 일러스트레이터를 활용한 상세페이지 디자인입니다.',
-        link: 'portfolio.pdf',
+        link: 'portfolio_2.pdf',
         image: 'imgs/projects/design1.png'
     },
     {
         title: '전시물품제작',
         description: 'Photoshop, Illustrator',
         details: '전시회 및 행사용 물품 디자인 프로젝트입니다.',
-        link: 'portfolio.pdf',
+        link: 'portfolio_2.pdf',
         image: 'imgs/projects/design2.png'
     },
     {
         title: '인쇄물, 포스터, 카드 제작',
         description: 'Photoshop, Illustrator',
         details: '다양한 인쇄 매체, 포스터, 카드 디자인 작업물입니다.',
-        link: 'portfolio.pdf',
+        link: 'portfolio_2.pdf',
         image: 'imgs/projects/design3.png'
     }
 ];
