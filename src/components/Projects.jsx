@@ -94,7 +94,7 @@ const Projects = () => {
 
                 {activeTab === 'design' && (
                     <div className="pdf-download-section">
-                        <a href="portfolio.pdf" target="_blank" rel="noopener noreferrer" className="pdf-download-btn">
+                        <a href="portfolio_2.pdf" target="_blank" rel="noopener noreferrer" className="pdf-download-btn">
                             View Design Portfolio PDF
                         </a>
                     </div>
